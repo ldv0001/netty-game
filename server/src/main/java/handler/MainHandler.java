@@ -89,7 +89,9 @@ public class MainHandler extends SimpleChannelInboundHandler {
             Player player = new Player(counter,ctx.channel(),ctx.channel().id());
             list.add(player);
             ctx.channel().writeAndFlush(player.getPlayerName()+" has joined\n");
-
+            if (counter==2){
+                broadcastMessage(gameService.startScreen());
+            }
             counter++;
 
         }else{

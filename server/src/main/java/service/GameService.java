@@ -105,6 +105,17 @@ public class GameService {
         return false;
     }
 
+    public String startScreen(){
+        String screen ="Enter the number where you want do display X or O\n\n"+
+                " 1 | 2 | 3 \n"+
+                "---+---+---\n"+
+                " 4 | 5 | 6 \n"+
+                "---+---+---\n"+
+                " 7 | 8 | 9 \n";
+        return screen;
+
+    }
+
 
 
 }
